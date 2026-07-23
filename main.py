@@ -8,7 +8,7 @@ proxy_client.session.proxies = {
     'https': os.environ.get('https_proxy', 'http://proxy.server:3128')
 }
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = os.environ.get("OWN_API_KEY")
+api_key = os.environ.get("OWM_API_KEY")
 account_sid = os.environ.get("account_sid")
 auth_token = os.environ.get("auth_token")
 weather_params = {
