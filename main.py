@@ -9,7 +9,6 @@ proxy_client.session.proxies = {
 }
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 api_key = os.environ.get("OWM_API_KEY")
-print(f"DEBUG: OWM_API_KEY status -> {'FOUND' if api_key else 'MISSING (None)'}")
 account_sid = os.environ.get("account_sid")
 auth_token = os.environ.get("auth_token")
 weather_params = {
