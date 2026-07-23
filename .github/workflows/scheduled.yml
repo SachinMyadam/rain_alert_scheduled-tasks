@@ -42,7 +42,7 @@ jobs:
 
       - name: Run script
         env:
-          OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
-          account_sid: ${{ secrets.ACCOUNT_SID }}
-          auth_token: ${{ secrets.AUTH_TOKEN }}
+          OWM_API_KEY: ${{ secrets.API_KEY }}       
+          account_sid: ${{ secrets.ACCOUNT_SID }}   
+          auth_token: ${{ secrets.AUTH_TOKEN }}   
         run: python main.py
