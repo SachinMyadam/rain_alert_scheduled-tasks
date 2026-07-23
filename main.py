@@ -27,7 +27,7 @@ for hour_data in weather_data["list"]:
     if int(condition_code) < 700:
         will_rain = True
 if will_rain:
-    client = Client(account_sid, auth_token, http_client=proxy_client)
+    client = Client(account_sid, auth_token)
     message = client.messages.create(
         to="+917095656881",
         from_="+12409237742",
